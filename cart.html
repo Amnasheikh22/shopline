@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4a3b1f73a2.js"></script>
+   
+    <title>Document</title>
+    <style>
+
+        h1{
+            margin-left:50px;
+            font-size:32px;
+            /* margin-top:60px; */
+            text-align: center;
+            padding-top:60px;
+    
+            
+        }
+        .grid-container{
+            display:grid;
+            border:1px solid black; 
+            grid-template-columns:repeat(4,1fr);
+            grid-template-rows:auto;
+            margin-right:30px;
+            margin-left:100px;
+            padding:10px;
+            box-shadow: 1px 2px 6px 2px rgb(219, 219, 219);
+            
+            
+    
+    
+        }
+    
+        .grid-item{
+            /* border:1px solid black; */
+            margin:6px;
+            height:500px;
+            box-shadow: 1px 2px 6px 2px rgb(219, 219, 219);
+            border-radius:6px;
+            width:230px;
+    
+        }
+        .grid-item h3, h2, p{
+            padding-right:20px;
+            padding-left:20px;
+            color: rgb(3, 94, 94);
+    
+        }
+        .grid-item h3{
+            margin-top:22px;
+            font-size:18px;
+        }
+        .grid-item h2{
+            font-size:22px;
+    
+        }
+        .description{
+            border:1px solid black;
+            float:right;
+            width:800px;
+            height:400px;
+            margin-left:100px;
+            padding:20px;
+            margin-top:50px;
+            box-shadow: 1px 2px 6px 2px rgb(219, 219, 219);
+
+        }
+        .white{
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom:20px;
+        }
+        button{
+            margin:0;
+           
+            color:white;
+            background-color: black;
+            border-radius:8px;
+            text-align: center;
+            padding-left:10px;
+            padding-right:10px;
+           
+            
+
+        }
+       button a{
+            text-decoration: none;
+            list-style-type: none;
+            color:white;
+        }
+        .select{
+            width:25px;
+            height:25px;
+            text-align: center;
+            padding:3px;
+            
+
+        }
+
+    
+    </style>
+</head>
+<body>
+    <div id="1"></div>
+    <script>
+      load("header.html")
+      function load(url){
+        req=new XMLHttpRequest()
+        req.open("GET",url,false);
+        req.send(null);
+        document.getElementById(1).innerHTML=req.responseText;
+      }
+    </script>
+
+<h1><strong>CART</strong></h1>
+    <div class="grid-container">
+
+        <h4>Product</h4>
+        <h4>Price</h4>
+        <h4>Quantity</h4>
+        <h4>Total</h4>
+        <div class="data" style="display:flex">
+            <img src="./images/shirt.jpg" style="height:150px;width:150px;padding:0"><i class="fa-regular fa-circle-xmark"></i>
+   <div class="des" style="margin-top:3px" >
+        <p>POKETO</p>
+        <p>White Shirt for Men</p>
+        <p>Set of 2</p>
+    </div>
+        </div>
+
+           
+        
+            
+            <p style="margin-top:20px">$14.000USD</p>
+
+           <div class="quantity" style="margin-top:20px">&nbsp 3 &nbsp<button class="select">-</button><button class="select">+</button></div> 
+  
+            <p style="margin-top:20px">$14.200USD</p>
+        
+        </div>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+<div id="footer"></div>
+<script>
+ 
+  function load(url){
+  req=new XMLHttpRequest();
+  req.open("GET",url,false);
+  req.send(null);
+  document.getElementById("footer").innerHTML=req.responseText;
+}
+load ("footer.html")
+</script>
+
+             
+</body>
+</html>

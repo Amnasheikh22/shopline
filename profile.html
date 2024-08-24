@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4a3b1f73a2.js"></script>
+   
+    <title>Document</title>
+    <style>
+        .section6{
+    width:350px;
+    height:500px;
+    border:1px solid black;
+    margin-left:40px;
+    background-color: white;
+    border-radius:5px;
+    margin-bottom:60px;
+    margin-top:20px;
+    
+   }
+
+.box2{
+    background-color:black;
+    width:350px;
+    height:80px;
+    
+    font-size:20px;
+    text-align:center;
+    padding-top:15px;
+}
+  
+
+    
+.box2 p{
+    font-size:14px;
+    color:black;
+    padding:21px;
+}
+
+
+.box2 h3{
+    font-size:20px;
+    color:white;
+    padding-top:10px;
+    
+}
+.box2 h4{
+    padding-top:10px;
+}
+
+
+.round{
+    width:45px;
+    height:45px;
+    border-radius:50px;
+    background-color: black;
+    margin-top:-8px;
+    padding-left:14px;
+    margin-left:19px;
+    padding-top:11px;
+}
+.round a{
+    padding-right:20px;
+    margin-top:-16px;
+    margin-left:1px;
+    color:white;
+}
+
+
+
+.maindiv{
+    padding:21px;
+    display:flex;
+    margin-left:11px;
+    margin-top:-33px;
+}
+
+.description{
+    border:1px solid black;
+    width:900px;
+    height:500px;
+    float:right;
+    margin-top:-558px;
+    margin-right:40px;
+}
+
+.description h1 {
+    padding:20px;
+}
+.description p {
+    padding:20px;
+}
+
+       
+    
+    </style>
+</head>
+<body>
+    <div id="1"></div>
+    <script>
+      load("header.html")
+      function load(url){
+        req=new XMLHttpRequest()
+        req.open("GET",url,false);
+        req.send(null);
+        document.getElementById(1).innerHTML=req.responseText;
+      }
+    </script>
+
+<div class="section6">
+    <div class="box2">
+         <h3>
+         About Me
+         </h3>
+         <img src="./images/baby.avif" alt="" style="width:200px;border-radius:180px;margin-top:50px">
+         <h4>shaikh anas</h4>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, officia.</p>
+         <!-- <div class="follow"> -->
+     <div class="maindiv">
+         <div class="round">
+         <a href="#" class="fab fa-facebook-f"></a>
+         </div>
+         <div class="round">
+         <a href="#" class="fab fa-twitter"></a>
+         </div>
+         <div class="round">
+         <a href="#" class="fab fa-instagram"></a>
+         </div>
+         <div class="round">
+         <a href="#" class="fab fa-linkedin"></a>
+        </div> 
+     </div>
+ </div>
+ </div>
+</div>
+</div>
+<div class="description">
+    <h1>My Profile Description</h1>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum officia, sunt a laudantium dolore ipsam voluptate cum assumenda aliquam non aperiam incidunt hic rem, aspernatur laborum minima minus fugit illum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum officia, sunt a laudantium dolore ipsam voluptate cum assumenda aliquam non aperiam incidunt hic rem, aspernatur laborum minima minus fugit illum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum officia, sunt a laudantium dolore ipsam voluptate cum assumenda aliquam non aperiam incidunt hic rem, aspernatur laborum minima minus fugit illum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum officia, sunt a laudantium dolore ipsam voluptate cum assumenda aliquam non aperiam incidunt hic rem, aspernatur laborum minima minus fugit illum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum officia, sunt a laudantium dolore ipsam voluptate cum assumenda aliquam non aperiam incidunt hic rem, aspernatur laborum minima minus fugit illum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum officia, sunt a laudantium dolore ipsam voluptate cum assumenda aliquam non aperiam incidunt hic rem, aspernatur laborum minima minus fugit illum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum officia, sunt a laudantium dolore ipsam voluptate cum assumenda aliquam non aperiam incidunt hic rem, aspernatur laborum minima minus fugit illum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum officia, sunt a laudantium dolore ipsam voluptate cum assumenda aliquam non aperiam incidunt hic rem, aspernatur laborum minima minus fugit illum?</p>
+</div>
+  
+
+
+
+
+
+
+
+
+
+
+
+<div id="footer"></div>
+<script>
+ 
+  function load(url){
+  req=new XMLHttpRequest();
+  req.open("GET",url,false);
+  req.send(null);
+  document.getElementById("footer").innerHTML=req.responseText;
+}
+load ("footer.html")
+</script>
+
+             
+</body>
+</html>
